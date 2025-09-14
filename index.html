@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人博客</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <header>
         <nav class="navbar">
             <div class="container">
-                <a href="index.html" class="logo">我的博客</a>
+                <a href="index.html" class="logo">Lori's Blog</a>
                 <ul class="nav-links">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">关于</a></li>
-                    <li><a href="#">归档</a></li>
-                    <li><a href="#">联系我</a></li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于</a></li>
                 </ul>
                 <div class="menu-btn">
-                    <div class="menu-btn__burger"></div>
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
         </nav>
@@ -27,46 +26,47 @@
 
     <main class="container">
         <div class="content">
-            <article class="post">
-                <h2><a href="#">我的第一篇博客文章</a></h2>
+            <!-- 文章1 -->
+            <article class="post-preview">
+                <h2 class="post-title"><a href="post.html">我的第一篇博客文章</a></h2>
                 <div class="post-meta">
-                    <span>日期：2025年9月15日</span>
-                    <span>作者：你的名字</span>
+                    <i class="far fa-calendar-alt"></i> 2025年9月15日 | <i class="far fa-user"></i> 你的名字
                 </div>
-                <p>这是我的第一篇博客文章的摘要。在这里，你可以简要介绍文章的内容，吸引读者继续阅读。Web开发的世界充满了无限的可能性，从构建漂亮的界面到实现复杂的后端逻辑...</p>
-                <a href="#" class="read-more">阅读更多</a>
+                <p class="post-excerpt">这是我的第一篇博客文章的摘要。在这里，你可以简要介绍文章的内容，吸引读者继续阅读...</p>
+                <a href="post.html" class="read-more">阅读全文 &rarr;</a>
             </article>
 
-            <article class="post">
-                <h2><a href="#">学习HTML, CSS, 和 JavaScript的心得</a></h2>
+            <!-- 文章2 -->
+            <article class="post-preview">
+                <h2 class="post-title"><a href="post.html">学习HTML, CSS, 和 JavaScript的心得</a></h2>
                 <div class="post-meta">
-                    <span>日期：2025年9月14日</span>
-                    <span>作者：你的名字</span>
+                    <i class="far fa-calendar-alt"></i> 2025年9月14日 | <i class="far fa-user"></i> 你的名字
                 </div>
-                <p>HTML, CSS, 和 JavaScript 是构建现代网页的基石。HTML负责结构，CSS负责样式，而JavaScript则为网页带来交互性。这篇文章将分享我学习这三者的一些经验和技巧...</p>
-                <a href="#" class="read-more">阅读更多</a>
+                <p class="post-excerpt">HTML, CSS, 和 JavaScript 是构建现代网页的基石。这篇文章将分享我学习这三者的一些经验和技巧...</p>
+                <a href="post.html" class="read-more">阅读全文 &rarr;</a>
             </article>
         </div>
 
         <aside class="sidebar">
             <div class="widget">
                 <h3>关于我</h3>
-                <p>你好！我是一名热衷于Web开发的学习者。欢迎来到我的博客，在这里我会分享我的学习笔记和项目经验。</p>
+                <img src="https://via.placeholder.com/100" alt="头像" class="avatar">
+                <p>你好！我是一名热衷于Web开发的学习者。欢迎来到我的博客。</p>
             </div>
             <div class="widget">
-                <h3>分类</h3>
-                <ul>
-                    <li><a href="#">技术分享</a></li>
-                    <li><a href="#">生活点滴</a></li>
-                    <li><a href="#">项目实战</a></li>
-                </ul>
+                <h3>联系方式</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </aside>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 我的个人博客. 保留所有权利。</p>
+            <p>&copy; 2025 你的名字. All Rights Reserved.</p>
         </div>
     </footer>
 
